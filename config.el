@@ -54,4 +54,8 @@
 ;; they are implemented.
 ;;
 ;
-(setq inferior-lisp-program "sbcl")
+
+(use-package! slime
+  :config
+  ;; code here will run after the package is loaded
+  (setq inferior-lisp-program "sbcl"))
